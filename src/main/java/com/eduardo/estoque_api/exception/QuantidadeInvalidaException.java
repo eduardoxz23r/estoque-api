@@ -1,4 +1,4 @@
-package com.eduardo.estoque_api.Exception;
+package com.eduardo.estoque_api.exception;
 
 public class QuantidadeInvalidaException extends IllegalArgumentException {
     public QuantidadeInvalidaException() {

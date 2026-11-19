@@ -1,0 +1,11 @@
+services:
+
+  db:
+    image: postgres:17
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: estoque
+      POSTGRES_USER: Eduardo
+      POSTGRES_PASSWORD: 9932
