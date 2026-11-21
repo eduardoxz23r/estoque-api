@@ -7,6 +7,7 @@ import com.eduardo.estoque_api.exception.QuantidadeNullException;
 import com.eduardo.estoque_api.produto.Produto;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -58,5 +59,9 @@ public class EstoqueService {
             throw new ProdutoNaoEncontradoException("Produto não encontrado!");
         }
         produtoRepository.delete(procurar.get());
+    }
+
+    public List<Produto> listar() {
+        return produtoRepository.findAll();
     }
 }

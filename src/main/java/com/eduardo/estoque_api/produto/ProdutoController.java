@@ -8,15 +8,22 @@ import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/produtos")
 public class ProdutoController {
 
+    //Injeção de Dependencia
     private final EstoqueService estoqueService;
 
-    //Injeção de Dependencia
     public ProdutoController(EstoqueService estoqueService) {
         this.estoqueService = estoqueService;
+    }
+
+    @GetMapping
+    public List<Produto> listar() {
+        return estoqueService.listar();
     }
 
     @PostMapping
