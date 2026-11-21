@@ -2,9 +2,9 @@ spring:
   application:
     name: estoque-api
   datasource:
-    url: jdbc:postgresql://localhost:5432/estoque
-    username: Eduardo
-    password: 9932
+    url: jdbc:postgresql://localhost:5432/${DB_NAME}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
   jpa:
     hibernate:
       ddl-auto: update

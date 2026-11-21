@@ -6,6 +6,6 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: estoque
-      POSTGRES_USER: Eduardo
-      POSTGRES_PASSWORD: 9932
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
