@@ -48,4 +48,9 @@ public class ProdutoController {
     public void delete(@PathVariable String nome) {
         estoqueService.deletar(nome);
     }
+
+    @PutMapping
+    public void atualizar(@RequestBody @Valid ProdutoRequest request) {
+         estoqueService.atualizar(request.nome(), request.quantidade());
+    }
 }

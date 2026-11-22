@@ -64,4 +64,16 @@ public class EstoqueService {
     public List<Produto> listar() {
         return produtoRepository.findAll();
     }
+
+    public void atualizar(String produto, Integer quantidade) {
+
+        var result = produtoRepository.findByNome(produto);
+
+        if (result.isEmpty()) {
+            throw new ProdutoNaoEncontradoException("Produto não encontrado!");
+        }
+
+        result.get().setQuantidade(quantidade);
+        produtoRepository.save(result.get());
+    }
 }
