@@ -1,7 +1,6 @@
 # Estoque-API
 
-API REST para estocar os produtos de uma loja.
-Permite cadastrar, consultar, atualizar, listar e remover produtos.
+API REST para controlar o estoque de uma loja. Permite cadastrar, consultar, atualizar, listar e remover produtos, com os dados guardados em PostgreSQL.
 
 ## Tecnologias
 
