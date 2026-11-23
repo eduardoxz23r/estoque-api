@@ -1,9 +1,6 @@
 package com.eduardo.estoque_api.produto;
 
-import com.eduardo.estoque_api.EstoqueService;
-import com.eduardo.estoque_api.ProdutoRepository;
 import com.eduardo.estoque_api.exception.ProdutoNaoEncontradoException;
-import com.eduardo.estoque_api.ProdutoRequest;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

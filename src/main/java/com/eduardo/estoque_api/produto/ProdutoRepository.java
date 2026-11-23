@@ -1,6 +1,5 @@
-package com.eduardo.estoque_api;
+package com.eduardo.estoque_api.produto;
 
-import com.eduardo.estoque_api.produto.Produto;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

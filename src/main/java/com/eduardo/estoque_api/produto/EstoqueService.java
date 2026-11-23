@@ -1,10 +1,9 @@
-package com.eduardo.estoque_api;
+package com.eduardo.estoque_api.produto;
 
 import com.eduardo.estoque_api.exception.ProdutoInvalidoException;
 import com.eduardo.estoque_api.exception.ProdutoNaoEncontradoException;
 import com.eduardo.estoque_api.exception.QuantidadeInvalidaException;
 import com.eduardo.estoque_api.exception.QuantidadeNullException;
-import com.eduardo.estoque_api.produto.Produto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -76,4 +75,5 @@ public class EstoqueService {
         result.get().setQuantidade(quantidade);
         produtoRepository.save(result.get());
     }
+
 }

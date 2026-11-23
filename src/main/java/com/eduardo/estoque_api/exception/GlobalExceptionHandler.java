@@ -1,6 +1,5 @@
-package com.eduardo.estoque_api;
+package com.eduardo.estoque_api.exception;
 
-import com.eduardo.estoque_api.exception.ProdutoNaoEncontradoException;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
