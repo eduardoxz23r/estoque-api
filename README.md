@@ -20,3 +20,13 @@ API REST para controlar o estoque de uma loja. Permite cadastrar, consultar, atu
 4. No IntelliJ, vá em **Run → Edit Configurations** e aponte o arquivo `.env` no campo "Environment variables".
 5. Rode a aplicação com o botão **Run**.
 6. A API fica em: http://localhost:8081/produtos
+
+## Endpoints
+
+| Método | URL                  | O que faz                                             |
+|--------|----------------------|-------------------------------------------------------|
+| POST   | /produtos            | Cadastra um produto (se já existe, soma a quantidade) |
+| GET    | /produtos/{nome} | Busca o produto cadastrado                            |
+| GET    | /produtos            | Checa a lista de produtos cadastrados                 |
+| PUT    | /produtos            | Substitui a quantidade do produto cadastrado           |
+| DELETE | /produtos/{nome}     | Deleta o produto cadastrado                           |
